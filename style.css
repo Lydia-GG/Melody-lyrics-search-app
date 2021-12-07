@@ -8,16 +8,16 @@
 header {
   font-family: 'Alfa Slab One', cursive;
   font-size: 40px;
-  color: #C8007F;
+  color: #c8007f;
   padding-top: 1rem;
   padding-left: 1rem;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
   width: 90%;
   margin: 20px auto;
 }
 
 header span {
-  color: #0E78CF;
+  color: #0e78cf;
 }
 
 .brand {
@@ -93,16 +93,15 @@ header span {
 
 .song-card {
   border-radius: 1rem;
-  box-shadow: -5px 5px 15px -10px #888888,
-    5px 5px 15px -10px#888888;
+  box-shadow: -5px 5px 15px -10px #888888, 5px 5px 15px -10px#888888;
   margin: 2rem 0;
   padding-bottom: 20px;
   text-align: center;
-  transition: all .5s linear;
+  transition: all 0.5s linear;
 }
 
 .artist-img img {
-  border-radius: .7rem .7rem 0 0;
+  border-radius: 0.7rem 0.7rem 0 0;
   width: 100%;
 }
 
@@ -169,7 +168,6 @@ header span {
   text-align: center;
   height: 95%;
   overflow-y: scroll;
-
 }
 
 .displayLyrics {
@@ -196,7 +194,7 @@ header span {
 }
 
 .song-lyrics p {
-  line-height: 50px;
+  line-height: 30px;
   font-size: 20px;
 }
 
@@ -212,4 +210,194 @@ header span {
 .link-style {
   text-decoration: none;
   color: #fff;
+}
+
+.noLyrics {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: red;
+  background-color: #fff;
+  border: 2px solid red;
+  border-radius: 1rem;
+  width: 60%;
+  height: 150px;
+  line-height: 150px;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.hideMessage {
+  display: none;
+}
+
+.noLyrics .NLcloseButton {
+  position: absolute;
+  right: 1.8rem;
+  top: 1rem;
+  font-size: 1.1rem;
+  padding: 4px 7px 2px;
+  border-radius: 50%;
+  color: red;
+  cursor: pointer;
+  margin-bottom: 5px;
+  background-color: #fff;
+  border: 1px solid red;
+}
+
+/* //media query */
+@media (max-width: 575px) {
+  header {
+    font-size: 36px;
+  }
+  .top-section {
+    height: 130px;
+  }
+  .top-section h1 {
+    font-size: 30px;
+  }
+  .search-section input {
+    width: 60%;
+    margin-left: -30px;
+    height: 40px;
+  }
+  .search-section button {
+    padding: 5px;
+  }
+  #results {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem 2rem;
+  }
+  .song-card {
+    margin: 2rem auto;
+    width: 90%;
+  }
+  #get-btn,
+  #link-btn {
+    font-size: 1rem;
+  }
+  .lyrics {
+    width: 90%;
+  }
+  .displayLyrics {
+    display: block;
+  }
+  .song-lyrics h2 {
+    font-size: 22px;
+  }
+  .song-lyrics p {
+    font-size: 18px;
+  }
+  .noLyrics {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 576px) {
+  header {
+    font-size: 38px;
+  }
+  .top-section {
+    height: 140px;
+  }
+  .top-section h1 {
+    font-size: 34px;
+  }
+  .search-section input {
+    width: 60%;
+    margin-left: -30px;
+    height: 45px;
+  }
+  .search-section button {
+    padding: 6px;
+  }
+  #results {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 2rem;
+  }
+  .song-card {
+    margin: 2rem auto;
+    width: 90%;
+  }
+  #get-btn,
+  #link-btn {
+    font-size: 1rem;
+  }
+  .lyrics {
+    width: 90%;
+  }
+  .displayLyrics {
+    display: block;
+  }
+  .song-lyrics h2 {
+    font-size: 22px;
+  }
+  .song-lyrics p {
+    font-size: 18px;
+  }
+  .noLyrics {
+    width: 90%;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    font-size: 40px;
+  }
+  .top-section {
+    height: 150px;
+  }
+  .top-section h1 {
+    font-size: 35px;
+  }
+  .search-section input {
+    width: 50%;
+    margin-left: -30px;
+    height: 50px;
+  }
+  .search-section button {
+    padding: 8px;
+  }
+  #results {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 3rem;
+  }
+  .song-card {
+    margin: 2rem 0;
+    width: 100%;
+  }
+  #get-btn,
+  #link-btn {
+    font-size: 1.2rem;
+  }
+  .lyrics {
+    width: 60%;
+  }
+  .displayLyrics {
+    display: block;
+  }
+  .song-lyrics h2 {
+    font-size: 30px;
+  }
+  .song-lyrics p {
+    font-size: 20px;
+  }
+  .noLyrics {
+    width: 70%;
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  #get-btn,
+  #link-btn {
+    font-size: 1.3rem;
+  }
+  .noLyrics {
+    width: 60%;
+    font-size: 1.5rem;
+  }
 }
