@@ -1,11 +1,11 @@
 # Melody-lyrics-search-app
 
-### Melody is a Lyrics search app
+### Melody is a Lyrics search app  https://lydia-gg.github.io/Melody-lyrics-search-app/
 
 ## App Interface
 
 ![App Interface](/images/melody.png)
- ![results example](/images/lyricsapp.png)
+  ![results example](/images/lyricsapp.png)
 
 ## Description
 
