@@ -4,10 +4,10 @@
 
 ## App Interface
 
-<pre>
+
 ![App Interface](/images/melody.png)
   ![results example](/images/lyricsapp.png)
-</pre>
+
 
 ## Description
 
