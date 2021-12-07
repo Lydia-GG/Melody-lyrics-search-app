@@ -1,0 +1,215 @@
+/* https://www.youtube.com/watch?v=sge_wR3u8WY&ab_channel=ZinoTrustAcademy  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 40px;
+  color: #C8007F;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  letter-spacing: .2rem;
+  width: 90%;
+  margin: 20px auto;
+}
+
+header span {
+  color: #0E78CF;
+}
+
+.brand {
+  display: inline;
+}
+
+.container {
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
+
+.top-section {
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  height: 150px;
+  border-radius: 10px;
+}
+
+.top-section h1 {
+  padding-top: 2rem;
+  color: #fff;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+
+.search-section input {
+  width: 50%;
+  height: 50px;
+  margin-top: 50px;
+  border-radius: 5px;
+  border: 3px solid #009ffd;
+  outline: 1px solid #fff;
+  text-indent: 10px;
+  border-radius: 1rem 0 1rem 0;
+}
+
+.search-section input::placeholder {
+  text-indent: 10px;
+}
+
+.search-section button {
+  margin-left: -90px;
+  padding: 8px;
+  border-radius: 5px;
+  background: #009ffd;
+  border: 1px solid #009ffd;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.search-section button:hover {
+  background: #005f99;
+  border: 1px solid #005f99;
+}
+
+.bottom-section {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-content: space-between;
+}
+
+#results {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 7rem;
+  padding-bottom: 3rem;
+  margin-top: 1.5rem;
+}
+
+.song-card {
+  border-radius: 1rem;
+  box-shadow: -5px 5px 15px -10px #888888,
+    5px 5px 15px -10px#888888;
+  margin: 2rem 0;
+  padding-bottom: 20px;
+  text-align: center;
+  transition: all .5s linear;
+}
+
+.artist-img img {
+  border-radius: .7rem .7rem 0 0;
+  width: 100%;
+}
+
+.song-details {
+  margin-top: 20px;
+  width: 90%;
+  margin: 10px auto 0;
+  position: relative;
+}
+
+.song-details span {
+  font-size: 1.2rem;
+  display: inline-block;
+  height: 50px;
+  padding: 10px 20px;
+}
+
+.get-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+#get-btn,
+#link-btn {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  height: 40px;
+  line-height: 40px;
+  padding: 0px 10px;
+  border-radius: 5px;
+  background: #007fca;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+#get-btn:hover,
+#link-btn:hover {
+  background: #005f99;
+  color: #fff;
+}
+
+.lyrics {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  background-color: #007fca;
+  background-image: linear-gradient(315deg, #005f99 0%, #048bda 74%);
+  border-radius: 1rem;
+  width: 60%;
+  height: 85%;
+  padding: 2rem 0;
+  display: none;
+  margin-bottom: 1rem;
+}
+
+.song-lyrics {
+  margin: 2rem;
+  margin-top: 2rem;
+  text-align: center;
+  height: 95%;
+  overflow-y: scroll;
+
+}
+
+.displayLyrics {
+  display: block;
+}
+
+#close-btn {
+  position: absolute;
+  right: 1.8rem;
+  font-size: 1.1rem;
+  border: none;
+  padding: 2px 6px;
+  border-radius: 50%;
+  color: #005f99;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.song-lyrics h2 {
+  letter-spacing: 1px;
+  padding: 1rem;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.song-lyrics p {
+  line-height: 50px;
+  font-size: 20px;
+}
+
+.not-found {
+  font-size: 30px;
+  margin-top: 6rem;
+  color: red;
+  text-align: center;
+  width: 100%;
+  grid-template-columns: 1fr !important;
+}
+
+.link-style {
+  text-decoration: none;
+  color: #fff;
+}
