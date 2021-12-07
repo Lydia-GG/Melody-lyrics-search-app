@@ -5,8 +5,7 @@
 ## App Interface
 
 ![App Interface](/images/melody.png)
-
-and the results will be like that ![results example](/images/lyricsapp.png)
+![results example](/images/lyricsapp.png)
 
 ## Description
 
